@@ -1,0 +1,30 @@
+.search-large-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.website-title {
+  color: #f2f2f2;
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: #E50914;
+}
+
+.search-large-inner-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  width: 50%;
+}
+
+@media(max-width: 768px) {
+  .input-container {
+    width: 90%;
+  }
+}
