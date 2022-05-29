@@ -67,7 +67,7 @@ def recommend_by_description(description):
 	main_df = result_df.append(new_df, ignore_index=True)
 
 	# Creating a Vectorizer object
-	cv = CountVectorizer(max_features=5000,stop_words='english')
+	cv = CountVectorizer(max_features=2500,stop_words='english')
 	# CountVectorizer runs a sparse matrix so we will convert it into a numpy array
 	vectors = cv.fit_transform(main_df['tags']).toarray()
 	
