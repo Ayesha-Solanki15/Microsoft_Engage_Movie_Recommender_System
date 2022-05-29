@@ -43,7 +43,7 @@ function App() {
         addToSearchHistory(movie.title + " " + movie.overview + " " + movie.tagline)
         setDescription("")
 
-        axios.post("http://localhost:5000/api/recommend/movies", {
+        axios.post("api/recommend/movies", {
           description: getSearchHistory()
         })
         .then((res) => {
